@@ -1,6 +1,6 @@
 package domain;
 
-public class Auto implements Driveable, Crashable {
+public class Auto implements Driveable, Crashable, Loadable {
     private String soort;
     private int aantalWielen;
     private int aantalPersonen;
@@ -47,5 +47,15 @@ public class Auto implements Driveable, Crashable {
     @Override
     public String crash() {
         return "De auto crasht...";
+    }
+
+    @Override
+    public String load(String item) {
+        return "We laden " + item + " in.";
+    }
+
+    @Override
+    public String loadBox() {
+        return "Doos inladen";
     }
 }

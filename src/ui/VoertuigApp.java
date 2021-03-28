@@ -18,5 +18,8 @@ public class VoertuigApp {
         System.out.println(fiets.alert());
         System.out.println(fiets.stop());
 
+        System.out.println();
+        System.out.println(auto.loadBox());
+        System.out.println(auto.load("fiets"));
     }
 }
